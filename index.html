@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Víctor Manuel González Cabrera</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('BNu5AiD3Fi3wFSQOw')
+    </script>
 </head>
 <body>
     
@@ -75,13 +81,77 @@
                     <p>Github</p>
                     <p>Bootstrap</p>
                     <p>Unity</p>
-                    <p>Typescript</p>
+                    <p>Wondershare Filmora</p>
+                    <p>EmailJS</p>
                 </div>
             </div>
         </section>
 
         <section class="empleos">
+            <div class="txtEmpleos">
+                <h2>Mis empleos recientes</h2>
+                <p>
+                    A continuación muestro un par de trabajos en los que me he
+                    desempeñado recientemente.
+                </p>
+            </div>
+            <div class="tarjetas">
+                <div class="imgTarjetas">
+                    <img width="100%" src="img/cinepolis.png" alt="">
+                    <div class="textoSobre">
+                        <h3>Atención a clientes en cinepolis</h3>
+                        <p>
+                            En la cadena Cinépolis, desempeñé funciones en el área de atención al cliente, 
+                            especializándome en el establecimiento de relaciones positivas y en ofrecer 
+                            un trato personalizado y profesional a los clientes.
+                        </p>                        
+                    </div>
+                </div>
+                <div class="imgTarjetas">
+                    <img width="100%" src="img/victorlogo.png" alt="">
+                    <div class="textoSobre">
+                        <h3>Creador de contenido independiente en YouTube</h3>
+                        <p>
+                            Creación de contenido acerca de videojuegos, puedes ver mi trabajo
+                            en el siguiente enlace: <a target="_blank" href="https://www.youtube.com/@VictorMGC">Canal de YouTube</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="imgTarjetas">
+                    <img width="100%" src="img/logovaca.png" alt="">
+                    <div class="textoSobre">
+                        <h3>Auxiliar de veterinario en "Establo el Colorado"</h3>
+                        <p>
+                            En "Establo El Colorado", trabajé como auxiliar de veterinario, 
+                            brindando apoyo en el cuidado, alimentación y curación del ganado. 
+                            Mi labor incluyó la supervisión 
+                            de la salud animal, y la gestión de la nutrición para asegurar el bienestar y 
+                            la productividad del ganado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+
+        <section class="contactame">
+            <div class="formulario">       
+                <form id="form">
+                    <div class="field">
+                    <label for="from_name">Nombre:</label>
+                    <input type="text" name="from_name" id="from_name" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="field">
+                    <label for="message">Tu mensaje:</label>
+                    <input type="text" name="message" id="message" placeholder="Ingresa tu mensaje">
+                    </div>
+                    <div class="field">
+                    <label for="email_id">Email:</label>
+                    <input type="text" name="email_id" id="email_id" placeholder="Ingresa tu correo">
+                    </div>
+                    <input type="submit" id="button" value="Enviar Correo" >
+                </form>
+            </div>
         </section>
     </main>
 
@@ -89,6 +159,8 @@
 
     </footer>
 
+
+    
     <script src="scripts/scriptIndex.js"></script>
 
 </body>

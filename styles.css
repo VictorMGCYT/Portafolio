@@ -197,15 +197,120 @@ body {
     color: #6E07F3;
 }
 
+/* Seccion de empleos recientes */
+.empleos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ff5e8d;
+    color: white;
+}
+
+.txtEmpleos {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txtEmpleos h2 {
+    font-size: 30px;
+}
+
+.txtEmpleos p {
+    font-size: 20px;
+}
 
 
+/* Tarjetas de empleos */
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+}
+
+.imgTarjetas {    
+    box-sizing: border-box;
+    padding: 20px;
+    width: 33.33%;
+    position: relative;
+}
+
+.imgTarjetas img {
+    border-radius: 20px;
+}
+
+.textoSobre {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.textoSobre a {
+    color: #ccc;
+}
+
+.formulario {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    list-style-position: inside ;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    padding: 20px;
+}
 
 /* Media query para panallas de telefonos móviles*/
-@media (max-width: 767px) {
+@media (max-width: 557px) {
 
     .presentacion .computer img{
         width: 200px;
         margin-bottom: 37px;
     }
 
+    .imgTarjetas {
+        width: 80%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Formulario */
+
+.contactame{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+
+@media (min-width: 558px) and (max-width: 800px)  {
+
+    .presentacion .computer img{
+        width: 300px;
+        margin-bottom: 25px;
+    }
+
+    .imgTarjetas {
+        width: 50%;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
