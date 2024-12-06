@@ -256,21 +256,60 @@ body {
     color: #ccc;
 }
 
+
+
+/* Formulario */
+
+.contactame{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 .formulario {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 90%;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    list-style-position: inside ;
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: white;
     box-shadow: 5px 5px 10px black;
-    padding: 20px;
+    padding: 30px;
+    font-size: 20px;
 }
+
+#form {
+    width: 100%;
+}
+
+#form label {
+    width: 80%;
+}
+
+#form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    resize: vertical;
+}
+
+#form input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
 
 /* Media query para panallas de telefonos móviles*/
 @media (max-width: 557px) {
@@ -286,17 +325,6 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-}
-
-
-/* Formulario */
-
-.contactame{
-    width: 100%;
-    position: relative;
-    z-index: 3;
-    margin-top: 20px;
-    margin-bottom: 200px;
 }
 
 
