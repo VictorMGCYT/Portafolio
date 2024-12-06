@@ -135,31 +135,46 @@
 
 
         <section class="contactame">
-            <div class="formulario">       
+            <div class="formulario">
+                <h2 style="text-align: center; font-size: 30px;">¡Contactame!</h2>       
                 <form id="form">
                     <div class="field">
                     <label for="from_name">Nombre:</label><br>
-                    <input type="text" name="from_name" id="from_name" placeholder="Ingresa tu nombre">
+                    <input required type="text" name="from_name" id="from_name" placeholder="Ingresa tu nombre">
                     </div>
                     <div class="field">
                     <label for="message">Tu mensaje:</label><br>
-                    <textarea rows="10" name="message" id="message" placeholder="Ingresa tu mensaje"></textarea>
+                    <textarea required rows="10" name="message" id="message" placeholder="Ingresa tu mensaje"></textarea>
                     </div>
                     <div class="field">
                     <label for="email_id">Email:</label><br>
-                    <input type="text" name="email_id" id="email_id" placeholder="Ingresa tu correo">
+                    <input required type="email" name="email_id" id="email_id" placeholder="Ingresa tu correo">
                     </div>
-                    <input type="submit" id="button" value="Enviar Correo" >
+                    <input class="btnSubmit" type="submit" id="button" value="Enviar Correo" >
                 </form>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <div class="piePagina">
+            <h3>Soñar y avanzar, paso a paso.</h3>
+            <div class="redesSociales">
+                <a target="_blank" href="https://www.youtube.com/@VictorMGC">
+                    <img width="50px" src="social-icons/youtube-168-svgrepo-com.svg" alt="">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/viktor_mgc/">
+                    <img width="50px" src="social-icons/instagram-svgrepo-com.svg" alt="">
+                </a>
+                <a target="_blank" href="https://x.com/Viktor_MGC">
+                    <img width="50px" src="social-icons/twitter-x.svg" alt="">
+                </a>
+            </div>
+            <p>Creado por mi @VictorMGC</p>
+        </div>
     </footer>
 
-
+    
     
     <script src="scripts/scriptIndex.js"></script>
 

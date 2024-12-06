@@ -1,4 +1,4 @@
-/* Estilos de la cabecera */
+/* ** Estilos de la cabecera */
 body {
     margin: 0;
 }
@@ -68,7 +68,7 @@ body {
     color: white;
 }
 
-/* Diseño de la parte del título */
+/* ** Diseño de la parte del título */
 
 .presentacion {
     display: flex;
@@ -112,7 +112,7 @@ body {
     margin-bottom: 0;
 }
 
-/* Parte de la presentación */
+/* ** Parte de la presentación */
 
 .descripcion {
     display: flex;
@@ -149,7 +149,7 @@ body {
     font-weight: 500;
 }
 
-/* Seccion de lenguajes */
+/* ** Seccion de lenguajes */
 
 .languajes {
     width: 100%;
@@ -197,7 +197,7 @@ body {
     color: #6E07F3;
 }
 
-/* Seccion de empleos recientes */
+/* ** Seccion de empleos recientes */
 .empleos {
     width: 100%;
     display: flex;
@@ -224,7 +224,7 @@ body {
 }
 
 
-/* Tarjetas de empleos */
+/* ** Tarjetas de empleos */
 
 .tarjetas {
     display: flex;
@@ -243,6 +243,23 @@ body {
 
 .imgTarjetas img {
     border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.imgTarjetas img:hover {
+    animation: hoverEffect 1.5s ease forwards;
+}
+
+@keyframes hoverEffect {
+    0% {
+        transform: scale(1) rotate(0deg); /* Estado inicial */
+    }
+    50% {
+        transform: scale(0.5) rotate(360deg); /* Crece y gira */
+    }
+    100% {
+        transform: scale(1); /* Vuelve a su tamaño original */
+    }
 }
 
 .textoSobre {
@@ -258,7 +275,7 @@ body {
 
 
 
-/* Formulario */
+/* ** Formulario */
 
 .contactame{
     width: 100%;
@@ -310,6 +327,70 @@ body {
     padding: 5px;
 }
 
+.btnSubmit {
+    background-color: transparent;
+    border: 3px solid #ff5e8d;
+    color: #ff5e8d;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color  0.3s ease;
+}
+
+.btnSubmit:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    background-color: #ff5e8d;
+    color: white;
+}
+
+
+/* ** Pie de página */
+
+.piePagina{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    background-color: #ff5e8d;
+}
+
+.piePagina h3 {
+    width: 30%;
+    min-width: 300px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.piePagina p {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.redesSociales {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    filter: invert(100%);
+}
+
+.redesSociales a {
+    text-decoration: none;
+}
+
+.redesSociales img {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 /* Media query para panallas de telefonos móviles*/
 @media (max-width: 557px) {
