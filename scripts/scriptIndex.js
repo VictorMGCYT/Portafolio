@@ -31,3 +31,17 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
+
+// animación para cargar el contenido de la página al inicio
+
+document.addEventListener('DOMContentLoaded', function () {
+  
+  const contenido = document.querySelectorAll('.difuso');
+
+  contenido[0].classList.add('visible');
+  contenido[1].classList.add('visible');
+  contenido[2].classList.add('visible');
+
+
+});

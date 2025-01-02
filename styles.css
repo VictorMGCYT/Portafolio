@@ -1,3 +1,18 @@
+/* ** Contenido Oculto para cargar al inicio */
+
+.difuso {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.difuso.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 /* ** Estilos de la cabecera */
 body {
     margin: 0;
@@ -95,6 +110,9 @@ body {
 }
 
 .titulo h2 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 400;
     color: #ffffff;
 }
@@ -150,6 +168,7 @@ body {
     margin-bottom: 150px;
     font-size: 20px;
     font-weight: 500;
+    text-align: justify;
 }
 
 /* ** Seccion de lenguajes */
@@ -233,7 +252,7 @@ body {
     margin-bottom: 0;
 }
 
-.desProyecto img {
+.desProyecto .imgFlip {
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 5px 5px 10px black;
@@ -242,6 +261,7 @@ body {
     max-width: 600px;
     transition: transform 0.4s ease;
 }
+
 
 
 .desProyecto p {
@@ -353,7 +373,7 @@ body {
 .imgTarjetas img {
     border-radius: 20px;
     transition: transform 0.5s ease;    
-    max-width: 600px;
+    max-width: 300px;
 }
 
 .imgTarjetas img:hover {
